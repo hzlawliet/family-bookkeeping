@@ -1,6 +1,21 @@
 ---
 name: family-bookkeeping
-description: Manage a family bookkeeping workflow backed by Feishu Bitable. Use when the user wants to record an expense or income, say things like “记一笔”“记账”“入账”“查本月支出”“看年度统计”“修改这笔账”“删除这笔账”, or import/export household transactions from WeChat or Alipay bills. Also use when the user wants monthly or yearly summaries, category breakdowns, member-based spending analysis, duplicate-safe bill imports, or natural-language CRUD for a shared family ledger.
+description: Manage a family bookkeeping workflow backed by Feishu Bitable. Use when the user wants to record an expense or income, say things like "记一笔""记账""入账""查本月支出""看年度统计""修改这笔账""删除这笔账", or import/export household transactions from WeChat or Alipay bills. Also use when the user wants monthly or yearly summaries, category breakdowns, member-based spending analysis, duplicate-safe bill imports, or natural-language CRUD for a shared family ledger.
+metadata:
+  {
+    "requires":
+      {
+        "env":
+          [
+            "FEISHU_APP_ID",
+            "FEISHU_APP_SECRET",
+            "FAMILY_BOOKKEEPING_APP_TOKEN",
+            "FAMILY_BOOKKEEPING_TABLE_ID",
+            "FAMILY_BOOKKEEPING_BITABLE_URL"
+          ],
+        "configPaths": ["~/.openclaw/workspace/.env"]
+      }
+  }
 ---
 
 # Family Bookkeeping
