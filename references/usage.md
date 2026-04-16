@@ -12,7 +12,7 @@ Default ledger information should be read from `~/.openclaw/workspace/.env`:
 
 ## Environment Variables
 
-Feishu credentials and default ledger settings are expected from `~/.openclaw/workspace/.env`:
+Feishu credentials and default ledger settings are expected from environment variables:
 
 - `FEISHU_APP_ID`
 - `FEISHU_APP_SECRET`

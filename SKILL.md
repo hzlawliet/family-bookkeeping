@@ -1,20 +1,7 @@
 ---
 name: family-bookkeeping
 description: Manage a family bookkeeping workflow backed by Feishu Bitable. Use when the user wants to record an expense or income, say things like "记一笔""记账""入账""查本月支出""看年度统计""修改这笔账""删除这笔账", or import/export household transactions from WeChat or Alipay bills. Also use when the user wants monthly or yearly summaries, category breakdowns, member-based spending analysis, duplicate-safe bill imports, or natural-language CRUD for a shared family ledger.
-metadata:
-  {
-    "requires":
-      {
-        "env":
-          [
-            "FEISHU_APP_ID",
-            "FEISHU_APP_SECRET",
-            "FAMILY_BOOKKEEPING_APP_TOKEN",
-            "FAMILY_BOOKKEEPING_TABLE_ID",
-            "FAMILY_BOOKKEEPING_BITABLE_URL"
-          ]
-      }
-  }
+metadata: { "openclaw": { "requires": { "env": ["FEISHU_APP_ID", "FEISHU_APP_SECRET", "FAMILY_BOOKKEEPING_APP_TOKEN", "FAMILY_BOOKKEEPING_TABLE_ID", "FAMILY_BOOKKEEPING_BITABLE_URL"] } } }
 ---
 
 # Family Bookkeeping
@@ -329,7 +316,7 @@ If confidence is low, prefer `其他 / 暂未分类`.
 - Default Feishu credentials should be read from environment variables:
   - `FEISHU_APP_ID`
   - `FEISHU_APP_SECRET`
-- Those variables are now expected to be available from `~/.openclaw/workspace/.env` so cross-channel runs do not need to pass explicit credentials each time
+- Those variables are expected to be available in the runtime environment so cross-channel runs do not need to pass explicit credentials each time
 - Keep user-visible replies short and practical
 - For deletions, require confirmation
 - For ambiguous updates, ask one precise question instead of guessing
