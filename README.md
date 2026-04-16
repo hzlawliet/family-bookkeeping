@@ -132,5 +132,4 @@ python3 skills/family-bookkeeping/scripts/recent_records.py --limit 10
 
 ## License
 
-请在这里补充你的开源协议。  
-Add your preferred license here.
+MIT License
