@@ -12,8 +12,7 @@ metadata:
             "FAMILY_BOOKKEEPING_APP_TOKEN",
             "FAMILY_BOOKKEEPING_TABLE_ID",
             "FAMILY_BOOKKEEPING_BITABLE_URL"
-          ],
-        "configPaths": ["~/.openclaw/workspace/.env"]
+          ]
       }
   }
 ---
