@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+.env.*
+
+# Local data / outputs
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+normalized.json
+normalized.csv
+feishu-import.csv
+precheck-out/
